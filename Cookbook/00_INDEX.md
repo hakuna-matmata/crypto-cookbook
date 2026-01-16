@@ -1,32 +1,36 @@
-# Solflare PM Cookbook: Complete Index
+# Crypto Cookbook: Complete Index
 
 **Last Updated:** January 2026
-**Version:** 1.0
-**Total Reading Time (All Documents):** ~3.5-4 hours
+**Version:** 1.1
+**Total Documents:** 11
+**Total Reading Time (All Documents):** ~4.5-5 hours
 
 ---
 
 ## Quick Start: Choose Your Path
 
 **⏱️ Short on time? (30 minutes)**
-- Read: [01_CRYPTO_THEORY.md](#01_crypto_theorymd) (15 min)
-- Read: [02_CRYPTO_TERMINOLOGY.md](#02_crypto_terminologymd) - Quick reference section only (5 min)
-- Skim: [12_USER_PAINS_AND_FRICTION.md](#12_user_pains_and_frictionmd) - Pain summary table (5 min)
-- Skim: [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](#11_solflare_prediction_markets_roadmapmd) - North Star & 3-month plan (10 min)
+- Read: [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
+- Read: [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) - Quick reference section only (5 min)
+- Skim: [12_USER_PAINS_AND_FRICTION.md](12_USER_PAINS_AND_FRICTION.md) - Pain summary table (10 min)
 
 **🎯 Focused on Predictions? (1.5-2 hours)**
-- Foundation: [01_CRYPTO_THEORY.md](#01_crypto_theorymd) (15 min)
-- Foundation: [02_CRYPTO_TERMINOLOGY.md](#02_crypto_terminologymd) (20 min)
-- Deep Dive: [10_PREDICTION_MARKETS_RESEARCH_2026.md](#10_prediction_markets_research_2026md) (45 min)
-- Strategy: [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](#11_solflare_prediction_markets_roadmapmd) (30 min)
+- Foundation: [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
+- Foundation: [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
+- Deep Dive: [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) (45 min)
+
+**💰 Focused on DeFi? (1.5-2 hours)**
+- Foundation: [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
+- Foundation: [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
+- Deep Dive: [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md) (35 min)
 
 **🎨 Focused on NFTs? (1.5-2 hours)**
-- Foundation: [01_CRYPTO_THEORY.md](#01_crypto_theorymd) (15 min)
-- Foundation: [02_CRYPTO_TERMINOLOGY.md](#02_crypto_terminologymd) (20 min)
-- NFT Fundamentals: [04_NFTS_FUNDAMENTALS.md](#04_nfts_fundamentalsmd) (30 min)
-- NFT Strategy: [06_NFTS_OPPORTUNITIES.md](#06_nfts_opportunitiesmd) (20 min)
+- Foundation: [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
+- Foundation: [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
+- NFT Fundamentals: [04_NFTS_FUNDAMENTALS.md](04_NFTS_FUNDAMENTALS.md) (30 min)
+- NFT Strategy: [06_NFTS_OPPORTUNITIES.md](06_NFTS_OPPORTUNITIES.md) (20 min)
 
-**📊 Complete Mastery? (3.5-4 hours)**
+**📊 Complete Mastery? (4.5-5 hours)**
 - Read all documents in order (see **Full Curriculum** below)
 
 ---
@@ -65,7 +69,25 @@
 - Stablecoins (USDC, DAI, mechanics)
 
 **Cross-References:** Used throughout all other documents
-**Next:** Choose your focus area below
+**Next:** [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md) or choose your focus area below
+
+---
+
+#### [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md)
+**Reading Time:** ~35 minutes
+**Audience:** Technical Product Managers
+**Purpose:** Practical DeFi activities and strategies with real numbers and risk analysis
+
+**Key Topics:**
+- Liquidity providing strategies (LP economics, concentrated liquidity, impermanent loss)
+- Staking & yield strategies (native staking, liquid staking tokens)
+- Trading strategies (technical indicators, risk/reward ratios)
+- Leverage & derivatives mechanics (perps, liquidation calculations)
+- Risk management (position sizing, portfolio allocation)
+- Solana-specific opportunities (Jupiter, Orca, Drift, Marinade)
+
+**Prerequisites:** [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md), [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md)
+**Next:** Choose your focus area below (NFT Track, Trading Track, or Prediction Markets)
 
 ---
 
@@ -186,7 +208,7 @@
 
 ---
 
-### 🎯 Prediction Markets Track (Documents 10-11)
+### 🎯 Prediction Markets Track (Document 10)
 
 #### [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md)
 **Reading Time:** ~45 minutes
@@ -207,27 +229,6 @@
 
 **Prerequisites:** [09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md](09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md)
 **Cross-References:** Drift Protocol, Polymarket, Kalshi, regulation, market sizing
-**Next:** [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md)
-
----
-
-#### [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md)
-**Reading Time:** ~30 minutes
-**Audience:** CEO, board, leadership
-**Purpose:** 3–6 month execution roadmap for Solflare's prediction markets strategy (post-launch)
-
-**Key Topics:**
-- Jan 2026 context (Kalshi + DFlow integration live)
-- North Star metric (weekly active predictors)
-- 3-phase execution plan (Jan → Jun)
-- Sportsbook mechanics translation (10 features + watch-outs)
-- Copying positions strategy (safest → spiciest)
-- Competitor awareness (Phantom, Backpack, DraftKings)
-- MVP scope prioritization
-- Regulatory resilience & compliance
-
-**Prerequisites:** [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md)
-**Cross-References:** Solflare positioning, DFlow/Kalshi partnership, market opportunity
 **Next:** [12_USER_PAINS_AND_FRICTION.md](12_USER_PAINS_AND_FRICTION.md)
 
 ---
@@ -265,27 +266,27 @@
 1. [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) - Foundation (15 min)
 2. [06_NFTS_OPPORTUNITIES.md](06_NFTS_OPPORTUNITIES.md) - NFT strategy (20 min)
 3. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) - Market analysis (45 min)
-4. [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md) - Execution plan (30 min)
+4. [12_USER_PAINS_AND_FRICTION.md](12_USER_PAINS_AND_FRICTION.md) - User pain points (12 min)
 
 ---
 
 ### 🎨 Product Manager
-**Total Time:** ~3 hours
+**Total Time:** ~3.5 hours
 
 **Core Foundation:**
 1. [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
 2. [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
-3. [12_USER_PAINS_AND_FRICTION.md](12_USER_PAINS_AND_FRICTION.md) (12 min)
+3. [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md) (35 min)
+4. [12_USER_PAINS_AND_FRICTION.md](12_USER_PAINS_AND_FRICTION.md) (12 min)
 
 **NFT Track:**
-4. [04_NFTS_FUNDAMENTALS.md](04_NFTS_FUNDAMENTALS.md) (30 min)
-5. [05_NFTS_USE_CASES.md](05_NFTS_USE_CASES.md) (20 min)
-6. [07_NFTS_UX_STRATEGY.md](07_NFTS_UX_STRATEGY.md) (25 min)
+5. [04_NFTS_FUNDAMENTALS.md](04_NFTS_FUNDAMENTALS.md) (30 min)
+6. [05_NFTS_USE_CASES.md](05_NFTS_USE_CASES.md) (20 min)
+7. [07_NFTS_UX_STRATEGY.md](07_NFTS_UX_STRATEGY.md) (25 min)
 
-**Prediction Markets Track:**
-7. [09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md](09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md) (55 min)
-8. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) (45 min)
-9. [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md) (30 min)
+**Trading & Prediction Markets Track:**
+8. [09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md](09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md) (55 min)
+9. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) (45 min)
 
 ---
 
@@ -294,22 +295,22 @@
 
 1. [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
 2. [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
-3. [04_NFTS_FUNDAMENTALS.md](04_NFTS_FUNDAMENTALS.md) - Technical foundations section (15 min)
-4. [09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md](09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md) - Architecture sections (30 min)
-5. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) - Platform architecture section (20 min)
-6. [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md) - Engineering specs (20 min)
+3. [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md) - Technical strategies section (20 min)
+4. [04_NFTS_FUNDAMENTALS.md](04_NFTS_FUNDAMENTALS.md) - Technical foundations section (15 min)
+5. [09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md](09_TRADING_TERMINOLOGY_AND_DERIVATIVES.md) - Architecture sections (30 min)
+6. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) - Platform architecture section (20 min)
 
 ---
 
 ### 📊 Analyst / Business Development
-**Total Time:** ~3 hours
+**Total Time:** ~2.5 hours
 
 1. [01_CRYPTO_THEORY.md](01_CRYPTO_THEORY.md) (15 min)
 2. [02_CRYPTO_TERMINOLOGY.md](02_CRYPTO_TERMINOLOGY.md) (20 min)
-3. [06_NFTS_OPPORTUNITIES.md](06_NFTS_OPPORTUNITIES.md) (20 min)
-4. [08_NFTS_MARKETPLACE_GUIDE.md](08_NFTS_MARKETPLACE_GUIDE.md) (20 min)
-5. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) (45 min)
-6. [11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md](11_SOLFLARE_PREDICTION_MARKETS_ROADMAP.md) (30 min)
+3. [03_DEFI_ACTIVITIES_GUIDE.md](03_DEFI_ACTIVITIES_GUIDE.md) (35 min)
+4. [06_NFTS_OPPORTUNITIES.md](06_NFTS_OPPORTUNITIES.md) (20 min)
+5. [08_NFTS_MARKETPLACE_GUIDE.md](08_NFTS_MARKETPLACE_GUIDE.md) (20 min)
+6. [10_PREDICTION_MARKETS_RESEARCH_2026.md](10_PREDICTION_MARKETS_RESEARCH_2026.md) (45 min)
 
 ---
 
@@ -322,6 +323,10 @@
 | **Terminology & Definitions** | 02_CRYPTO_TERMINOLOGY | All (reference) |
 | **Wallet Types** | 02_CRYPTO_TERMINOLOGY | Wallets & Custody |
 | **Stablecoins** | 02_CRYPTO_TERMINOLOGY | Stablecoins (USDC) |
+| **Liquidity Providing** | 03_DEFI_ACTIVITIES_GUIDE | LP Economics, Concentrated Liquidity |
+| **Staking & Yield** | 03_DEFI_ACTIVITIES_GUIDE | Staking & Yield Strategies |
+| **DeFi Trading** | 03_DEFI_ACTIVITIES_GUIDE | Trading Strategies |
+| **Risk Management** | 03_DEFI_ACTIVITIES_GUIDE | Risk Management section |
 | **NFT Fundamentals** | 04_NFTS_FUNDAMENTALS | All |
 | **NFT Use Cases** | 05_NFTS_USE_CASES | All |
 | **NFT Strategy & Market** | 06_NFTS_OPPORTUNITIES | Market Landscape, Roadmap |
@@ -335,8 +340,7 @@
 | **Prediction Markets Users** | 10_PREDICTION_MARKETS_RESEARCH | User Segments |
 | **Prediction Markets Tech** | 10_PREDICTION_MARKETS_RESEARCH | Platform Architecture |
 | **Prediction Markets Regulation** | 10_PREDICTION_MARKETS_RESEARCH | Regulatory Environment |
-| **Prediction Markets Strategy** | 11_SOLFLARE_PREDICTION_MARKETS_ROADMAP | All |
-| **Drift Protocol** | 10_PREDICTION_MARKETS_RESEARCH, 11_SOLFLARE_PREDICTION_MARKETS_ROADMAP | Solana opportunity, Partnership section |
+| **Drift Protocol** | 10_PREDICTION_MARKETS_RESEARCH | Solana opportunity section |
 | **User Pain Points** | 12_USER_PAINS_AND_FRICTION | All |
 | **Wallet UX & Friction** | 12_USER_PAINS_AND_FRICTION | All sections |
 | **Transaction Failures** | 12_USER_PAINS_AND_FRICTION | Pain 1 section |
@@ -354,11 +358,12 @@
 - **07_NFTS_UX_STRATEGY:** Security & trust features
 
 ### 💰 Economics & Revenue
+- **03_DEFI_ACTIVITIES_GUIDE:** LP economics, yield strategies
 - **06_NFTS_OPPORTUNITIES:** Revenue opportunities
 - **10_PREDICTION_MARKETS_RESEARCH:** Economics & revenue models
-- **11_SOLFLARE_PREDICTION_MARKETS_ROADMAP:** Unit economics, profitability
 
 ### 🏗️ Technical Architecture
+- **03_DEFI_ACTIVITIES_GUIDE:** DeFi protocol mechanics, Solana-specific platforms
 - **04_NFTS_FUNDAMENTALS:** Token standards, smart contracts
 - **09_TRADING_TERMINOLOGY:** Derivatives mechanics, smart contracts
 - **10_PREDICTION_MARKETS_RESEARCH:** Platform architecture (orderbook, AMM, hybrid)
@@ -367,11 +372,9 @@
 - **06_NFTS_OPPORTUNITIES:** SWOT, competitive positioning
 - **08_NFTS_MARKETPLACE_GUIDE:** Marketplace comparison
 - **10_PREDICTION_MARKETS_RESEARCH:** Market landscape, platform comparison
-- **11_SOLFLARE_PREDICTION_MARKETS_ROADMAP:** Competitive differentiation
 
 ### 🎯 Regulatory & Compliance
 - **10_PREDICTION_MARKETS_RESEARCH:** CFTC framework, compliance requirements
-- **11_SOLFLARE_PREDICTION_MARKETS_ROADMAP:** Compliance review, regulatory risk
 
 ---
 
@@ -381,6 +384,8 @@
 01_CRYPTO_THEORY
     ↓
 02_CRYPTO_TERMINOLOGY (reference)
+    ↓
+03_DEFI_ACTIVITIES_GUIDE
     ↓
     ├─→ 04_NFTS_FUNDAMENTALS
     │       ↓
@@ -395,27 +400,27 @@
     └─→ 09_TRADING_TERMINOLOGY_AND_DERIVATIVES
             ↓
         10_PREDICTION_MARKETS_RESEARCH_2026
-            ↓
-        11_SOLFLARE_PREDICTION_MARKETS_ROADMAP
+
+12_USER_PAINS_AND_FRICTION (standalone, reference anytime)
 ```
 
 ---
 
 ## Quick Reference Table
 
-| Doc | Time | Level | Focus | Status |
-|-----|------|-------|-------|--------|
-| 01 | 15m | Foundation | Crypto theory | ✅ Complete |
-| 02 | 20m | All | Terminology | ✅ Complete (Corrected) |
-| 04 | 30m | PM | NFT fundamentals | ✅ Complete |
-| 05 | 20m | PM | NFT use cases | ✅ Complete |
-| 06 | 20m | Strategy | NFT opportunities | ✅ Complete |
-| 07 | 25m | Product | NFT UX strategy | ✅ Complete |
-| 08 | 20m | PM/BD | NFT marketplaces | ✅ Complete |
-| 09 | 55m | Advanced | Trading & derivatives | ✅ Complete (w/ Positions) |
-| 10 | 45m | Strategy | Prediction markets research | ✅ Complete (Corrected) |
-| 11 | 30m | Leadership | Prediction markets roadmap | ✅ Complete (Updated) |
-| 12 | 12m | Product | User pains & friction | ✅ Complete |
+| Doc | Title | Time | Level | Focus | Status |
+|-----|-------|------|-------|-------|--------|
+| 01 | CRYPTO_THEORY | 15m | Foundation | Crypto theory | ✅ Complete |
+| 02 | CRYPTO_TERMINOLOGY | 20m | All | Terminology | ✅ Complete |
+| 03 | DEFI_ACTIVITIES_GUIDE | 35m | PM | DeFi strategies | ✅ Complete |
+| 04 | NFTS_FUNDAMENTALS | 30m | PM | NFT fundamentals | ✅ Complete |
+| 05 | NFTS_USE_CASES | 20m | PM | NFT use cases | ✅ Complete |
+| 06 | NFTS_OPPORTUNITIES | 20m | Strategy | NFT opportunities | ✅ Complete |
+| 07 | NFTS_UX_STRATEGY | 25m | Product | NFT UX strategy | ✅ Complete |
+| 08 | NFTS_MARKETPLACE_GUIDE | 20m | PM/BD | NFT marketplaces | ✅ Complete |
+| 09 | TRADING_TERMINOLOGY | 55m | Advanced | Trading & derivatives | ✅ Complete |
+| 10 | PREDICTION_MARKETS_RESEARCH | 45m | Strategy | Prediction markets | ✅ Complete |
+| 12 | USER_PAINS_AND_FRICTION | 12m | Product | User pain points | ✅ Complete |
 
 ---
 
@@ -425,7 +430,7 @@
 2. **Need a specific topic?** Use the Document Matrix to find the right section
 3. **Building a feature?** Follow the dependency chain to understand prerequisites
 4. **Quick lookup?** Use the terminology document (02) as reference
-5. **Strategic planning?** Start with market research docs (06, 10) then roadmap (11)
+5. **Strategic planning?** Start with market research docs (06, 10)
 
 ---
 
@@ -435,6 +440,7 @@
 |----------|---------|--------------|------------|
 | 01_CRYPTO_THEORY | 1.0 | Jan 2026 | Finality corrections |
 | 02_CRYPTO_TERMINOLOGY | 1.1 | Jan 2026 | Wallets & custody section, corrections |
+| 03_DEFI_ACTIVITIES_GUIDE | 1.0 | Jan 2026 | Initial release |
 | 04_NFTS_FUNDAMENTALS | 1.0 | Jan 2026 | Initial release |
 | 05_NFTS_USE_CASES | 1.0 | Jan 2026 | Initial release |
 | 06_NFTS_OPPORTUNITIES | 1.0 | Jan 2026 | Initial release |
@@ -442,7 +448,6 @@
 | 08_NFTS_MARKETPLACE_GUIDE | 1.0 | Jan 2026 | Initial release |
 | 09_TRADING_TERMINOLOGY | 1.3 | Jan 2026 | Positions section added |
 | 10_PREDICTION_MARKETS_RESEARCH | 1.0 | Jan 2026 | Fact-checked & corrected |
-| 11_SOLFLARE_PREDICTION_MARKETS_ROADMAP | 2.0 | Jan 2026 | 3-6 month post-launch roadmap, sportsbook mechanics, copy positions |
 | 12_USER_PAINS_AND_FRICTION | 1.0 | Jan 2026 | Initial release |
 
 ---
@@ -459,7 +464,7 @@ If you find errors, outdated information, or have suggestions for new content:
 
 **Navigation:** [← Back to Cookbook](./)
 
-**Last Updated:** January 14, 2026
-**Maintained By:** Solflare Product Team
-**Status:** Complete, Fact-Checked, 12 Documents
+**Last Updated:** January 16, 2026
+**Maintained By:** Product Team
+**Status:** Complete, Fact-Checked, 11 Documents
 
