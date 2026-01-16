@@ -105,7 +105,7 @@ ADVANCED
 
 ## Full Index
 
-See [00_INDEX.md](00_INDEX.md) for:
+See [00_INDEX.md](Cookbook/00_INDEX.md) for:
 - Complete topic finder
 - Cross-references between documents
 - Reading paths by goal
