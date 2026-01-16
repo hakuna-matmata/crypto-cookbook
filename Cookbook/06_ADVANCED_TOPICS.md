@@ -7,6 +7,46 @@
 
 ---
 
+## Table of Contents
+
+1. [What You'll Learn](#what-youll-learn)
+2. [Quick Acronym Reference](#quick-acronym-reference)
+3. [Part 1: Prediction Markets](#part-1-prediction-markets)
+   - [What Are Prediction Markets?](#what-are-prediction-markets)
+   - [How They Work](#how-they-work)
+   - [Trading Prediction Markets](#trading-prediction-markets)
+   - [Major Platforms](#major-platforms)
+   - [Unified Margin: The Innovation](#unified-margin-the-innovation)
+4. [Part 2: Liquidation Cascades](#part-2-liquidation-cascades)
+   - [What Causes Cascades](#what-causes-cascades)
+   - [The Self-Reinforcing Loop](#the-self-reinforcing-loop)
+   - [October 2025 Case Study](#october-2025-case-study)
+   - [Protecting Yourself](#protecting-yourself)
+5. [Part 3: MEV (Maximal Extractable Value)](#part-3-mev-maximal-extractable-value)
+   - [What is MEV?](#what-is-mev)
+   - [Common MEV Strategies](#common-mev-strategies)
+   - [Protecting Against MEV](#protecting-against-mev)
+6. [Part 4: Advanced Yield Strategies](#part-4-advanced-yield-strategies)
+   - [Multi-Layer Yield Stacking](#multi-layer-yield-stacking)
+   - [Basis Trading](#basis-trading)
+   - [Delta-Neutral Strategies](#delta-neutral-strategies)
+   - [Recursive Lending](#recursive-lending)
+7. [Part 5: Oracle Systems](#part-5-oracle-systems)
+   - [What Oracles Do](#what-oracles-do)
+   - [Types of Oracles](#types-of-oracles)
+   - [Oracle Risks](#oracle-risks)
+8. [Part 6: Governance and DAOs](#part-6-governance-and-daos)
+   - [What is a DAO?](#what-is-a-dao)
+   - [Governance Tokens](#governance-tokens)
+   - [Voting Mechanisms](#voting-mechanisms)
+9. [Part 7: Risk Framework](#part-7-risk-framework)
+   - [Position Sizing](#position-sizing)
+   - [Risk-Adjusted Returns](#risk-adjusted-returns)
+   - [Building a Risk Budget](#building-a-risk-budget)
+10. [Summary](#summary)
+
+---
+
 ## What You'll Learn
 
 This document covers advanced concepts:

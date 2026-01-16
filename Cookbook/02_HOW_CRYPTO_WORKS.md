@@ -1,9 +1,38 @@
 # How Crypto Works: Wallets, Transactions & Custody
 
-**Reading Time:** ~25 minutes
+**Reading Time:** ~35 minutes
 **Audience:** Beginners ready for practical knowledge
 **Level:** Beginner
 **Updated:** January 2026
+
+---
+
+## Table of Contents
+
+1. [What You'll Learn](#what-youll-learn)
+2. [Part 1: How Wallets Actually Work](#part-1-how-wallets-actually-work)
+   - [Wallets Don't Hold Crypto](#wallets-dont-hold-crypto)
+   - [The Key Pair System](#the-key-pair-system)
+   - [Seed Phrases: Your Master Backup](#seed-phrases-your-master-backup)
+   - [Key Derivation (HD Wallets)](#key-derivation-hd-wallets)
+3. [Part 2: Types of Wallets](#part-2-types-of-wallets)
+   - [Software Wallets (Hot Wallets)](#software-wallets-hot-wallets)
+   - [Hardware Wallets (Cold Wallets)](#hardware-wallets-cold-wallets)
+   - [Browser Extension Wallets](#browser-extension-wallets)
+   - [Mobile App Wallets](#mobile-app-wallets)
+4. [Part 3: Custodial vs Non-Custodial](#part-3-custodial-vs-non-custodial)
+   - [Custodial: Someone Else Holds Your Keys](#custodial-someone-else-holds-your-keys)
+   - [Non-Custodial: You Hold Your Keys](#non-custodial-you-hold-your-keys)
+   - [Complete Custody Comparison](#complete-custody-comparison)
+5. [Part 4: How Transactions Work](#part-4-how-transactions-work)
+   - [Anatomy of a Transaction](#anatomy-of-a-transaction)
+   - [The Transaction Lifecycle](#the-transaction-lifecycle)
+   - [Commitment Levels (Solana)](#commitment-levels-solana)
+6. [Part 5: Addresses and Networks](#part-5-addresses-and-networks)
+7. [Part 6: Security Best Practices](#part-6-security-best-practices)
+8. [Part 7: Choosing the Right Setup](#part-7-choosing-the-right-setup)
+9. [Part 8: Practical Wallet Actions](#part-8-practical-wallet-actions)
+10. [Summary](#summary)
 
 ---
 
@@ -32,18 +61,20 @@ Think of it like this:
 - Your wallet holds the key that proves you control Address X
 - The crypto never "moves" to your wallet—only ownership changes on the ledger
 
+**Key distinction**: A wallet is NOT a bank account. You own the keys; you own the crypto. If you lose the keys, the crypto is gone forever (no password reset).
+
 ### The Key Pair System
 
 Every wallet creates two mathematically linked keys:
 
 **Private Key**
 - A long random number (256 bits)
-- Must be kept secret
-- Proves you authorized transactions
-- If someone gets it, they control your crypto
+- A secret number that proves ownership and authorizes transactions
+- Must be kept secret—equivalent to a password, but mathematically tied to your account address
+- If exposed: full account compromise
 
 **Public Key (Address)**
-- Derived mathematically from private key
+- Derived mathematically from private key using elliptic curve mathematics
 - Safe to share with anyone
 - Where people send you crypto
 - Cannot be reversed to find private key
@@ -52,6 +83,11 @@ Every wallet creates two mathematically linked keys:
 Private Key (SECRET)
    ↓ Mathematical derivation (one-way)
 Public Key → Address (SHARE FREELY)
+```
+
+**Example Solana address:**
+```
+9B5X32orMjHAGJjCjwuc9jVrKm86V5yc...
 ```
 
 ### Seed Phrases: Your Master Backup
@@ -68,13 +104,40 @@ absurd abuse access accident account accuse achieve acid
 - Can regenerate ALL your accounts on any wallet
 - Industry standard (BIP39) works across all major wallets
 
+**Why it works:**
+- Words derived from entropy (randomness)
+- You can recreate the same private key from these words on any wallet
+- If device breaks, import seed phrase into new wallet → same keys
+
 **Critical rules:**
 - Write it down on paper (not digital)
 - Store in multiple secure locations
 - NEVER share with anyone
 - NEVER enter it on a website
 
-If someone has your seed phrase, they have everything.
+**Security rule: NEVER share seed phrase. Seed phrase = full access to all funds.**
+
+### Key Derivation (HD Wallets)
+
+From one seed phrase, you can generate unlimited addresses for unlimited cryptocurrencies.
+
+**How it works:**
+```
+Seed phrase (BIP39)
+  ↓
+Master key
+  ↓
+Derivation path (m/44'/501'/0'/0')  [This means: Solana, account 0, address 0]
+  ↓
+Private key for that address
+  ↓
+Public key (address)
+```
+
+**Why this matters:**
+- One seed phrase generates all your Solana addresses
+- Same seed works on Bitcoin, Ethereum, Solana (if wallet supports it)
+- Wallets can be recovered with just the seed phrase
 
 ---
 
@@ -82,16 +145,16 @@ If someone has your seed phrase, they have everything.
 
 ### Software Wallets (Hot Wallets)
 
-Your private keys live on an internet-connected device.
+Your private keys live on an internet-connected device. Keys stored on your device (phone, computer, browser) as encrypted data. Keys live on same device as internet connection—security depends on device security.
 
 **Browser Extensions:**
-- Phantom, MetaMask, Backpack
+- Phantom, MetaMask, Backpack, Solflare
 - Live in your browser
 - Convenient for daily transactions
 - Connect directly to websites and apps
 
 **Mobile Apps:**
-- Phantom Mobile, Trust Wallet
+- Phantom Mobile, Trust Wallet, Solflare Mobile
 - Keys stored on your phone
 - Biometric authentication (fingerprint/face)
 - More secure than computers (better app isolation)
@@ -109,19 +172,29 @@ Your private keys live on an internet-connected device.
 
 ### Hardware Wallets (Cold Wallets)
 
-Physical devices that store keys offline.
+Physical devices (USB stick-like) that securely store private keys offline. Keys never leave the device; you sign transactions on-device and broadcast signed data (not keys) to blockchain.
 
-**Examples:** Ledger, Trezor, Keystone
+**Examples:**
+- **Ledger** (most popular, 5M+ users)
+- **Trezor** (strong privacy/open-source focus)
+- **Coldcard** (Bitcoin-focused, highly secure)
+- **Keystone** (air-gapped, no USB connection)
 
 **How they work:**
 ```
 1. Keys generated on device (offline)
-2. Keys stored in tamper-resistant chip
+2. Keys stored in tamper-resistant chip (secure enclave)
 3. To transact: Connect device → Verify on device screen → Approve
 4. Device signs transaction internally
 5. Only signed transaction leaves device
 6. Private keys NEVER touch internet
 ```
+
+**Security model:**
+- Keys stored in secure enclave (tamper-resistant chip)
+- Signing happens on-device (malware on your computer can't steal keys)
+- Display on device (verify transaction before signing, not relying on computer screen)
+- Seed backup: If device breaks, recover with seed phrase on new device
 
 **Why they're more secure:**
 - Even if your computer has malware, keys are safe
@@ -130,7 +203,45 @@ Physical devices that store keys offline.
 
 **Trade-off:** Less convenient. Cost $50-150. Required for high-value holdings.
 
-### Comparison Table
+**Solana-specific hardware wallet support:**
+- Ledger: Full support (most used)
+- Trezor: Full support
+- Keystone: Support via QR code (air-gapped)
+
+### Browser Extension Wallets
+
+Private keys stored encrypted in browser storage. Sign transactions in popup when dApps request permission.
+
+**How it works:**
+```
+1. Create wallet → Private key generated locally → Stored encrypted in browser
+2. Connect to dApp → dApp requests permission to send transaction
+3. You review and approve in wallet popup
+4. Wallet signs transaction locally
+5. Signed transaction broadcast to blockchain
+```
+
+**Security:**
+- ✓ Keys never leave your device
+- ✓ dApp doesn't see private key (only gets signature)
+- ❌ Keys stored on internet-connected device (vulnerable to malware)
+- ❌ Browser extensions can be compromised
+
+**Solana ecosystem:**
+- **Phantom** (~15M users): Dominant Solana wallet
+- **Solflare** (~4M users): #2 Solana wallet, focus on security (transaction preview, phishing detection)
+- **TrustWallet**: Multi-chain, owned by Binance
+
+### Mobile App Wallets
+
+Private keys stored on phone's secure enclave (if available). More secure than computers (phones have stronger isolation).
+
+**Security improvements over computers:**
+- Phone OS isolates apps better than computer browsers
+- Some phones (iPhone with Secure Enclave) store keys in tamper-resistant hardware
+- Biometric auth (face/fingerprint) more convenient than passwords
+
+### Wallet Comparison Table
 
 | Type | Security | Convenience | Best For |
 |------|----------|-------------|----------|
@@ -145,49 +256,64 @@ Physical devices that store keys offline.
 
 ### Custodial: Someone Else Holds Your Keys
 
-**Examples:** Coinbase, Binance, Kraken (exchanges)
+Third party (exchange, institution, or service) holds your private keys on your behalf. You access crypto through their app/platform, but they control the keys.
+
+**Examples:**
+- **Centralized exchanges**: Binance, Kraken, Coinbase (you hold coins on exchange)
+- **Trading platforms**: Robinhood, eToro
+- **Custodial services**: PayPal, Square (limited crypto features)
 
 **How it works:**
-- You create account with email/password
-- Exchange generates and stores your keys
-- You see a "balance" in their interface
-- To withdraw, you request transfer to your address
+```
+You send crypto → Exchange receives your crypto
+Exchange stores your keys in their vault
+You withdraw by requesting from exchange
+Exchange transfers to your address
+```
 
 **Pros:**
-- Easy to use (like a bank app)
-- Password reset if forgotten
+- Easy to use (familiar UI like banking apps)
+- No key management required (no lost keys)
 - Customer support available
-- No key management responsibility
+- Can freeze suspicious accounts (safety)
 
 **Cons:**
-- "Not your keys, not your coins"
-- Exchange can freeze your account
-- If exchange is hacked, you lose funds
-- If exchange collapses (FTX), funds may be lost
-- Regulatory seizure possible
+- **Counterparty risk**: Exchange can be hacked (Mt. Gox lost $450M, FTX collapsed)
+- **Regulatory risk**: Funds can be frozen by authorities or seized
+- **Not your keys, not your coins**: You don't technically own the crypto until you withdraw
+- **Lower yield**: Platforms take cut of staking/lending returns
 
 ### Non-Custodial: You Hold Your Keys
 
-**Examples:** Phantom, MetaMask, Ledger
+You hold your own private keys. You control the crypto directly on the blockchain. No third party can prevent you from sending/receiving.
+
+**Examples:**
+- **Software wallets**: MetaMask, Phantom, Solflare, TrustWallet
+- **Hardware wallets**: Ledger, Trezor, Coldcard
+- **Browser wallets**: Brave wallet
+- **Self-hosted**: Running your own node with full control
 
 **How it works:**
-- You generate your own keys
-- Keys stored on your device only
-- You sign transactions directly
-- No middleman, no permission needed
+```
+You generate private keys (stored in your device/vault)
+You sign transactions locally with your keys
+You broadcast signed transaction to blockchain
+Blockchain processes it without intermediary
+```
 
 **Pros:**
-- True ownership
-- No counterparty risk
-- Censorship-resistant
-- Full access to DeFi
-- Privacy (no KYC for wallet creation)
+- **True ownership**: You control the keys, you control the funds
+- **No counterparty risk**: No exchange can be hacked to steal your funds
+- **Censorship-resistant**: No authority can freeze your account
+- **Better yield**: Direct access to DeFi protocols
+- **Composability**: Can use same keys across multiple dApps (DeFi, NFTs, staking)
 
 **Cons:**
-- You're fully responsible
-- Lose seed phrase = lose everything
-- No customer support
-- Must understand security basics
+- **Key management burden**: You're responsible for backups
+- **Loss is permanent**: Lose seed phrase = funds gone forever
+- **User error risk**: Sending to wrong address, phishing, malware
+- **Less support**: Wallets provide limited customer support
+- **Slower onboarding**: More setup required
 
 ### The Golden Rule
 
@@ -196,6 +322,31 @@ Physical devices that store keys offline.
 **Significant savings, long-term holding:** Non-custodial required
 
 **High-value holdings:** Hardware wallet + non-custodial
+
+### Complete Custody Comparison
+
+| Aspect | Custodial (CEX) | Software Wallet | Hardware Wallet |
+|--------|-----------------|-----------------|-----------------|
+| **Key Control** | Exchange holds | You hold | You hold |
+| **Owner Risk** | Hacks, freezing, collapse | Malware, phishing, lost seed | Lost device, lost seed |
+| **Security Level** | Medium (professional security, but centralized target) | Good (keys isolated from signing) | Excellent (keys offline) |
+| **Speed** | Instant (on exchange) | 1-3 seconds | 10-30 seconds (device interaction) |
+| **Convenience** | Excellent (like banking app) | Very good (built-in dApp browser) | Good (but device required) |
+| **DeFi Access** | Limited | Full access to all DeFi | Full access with device |
+| **Cost** | Fees per transaction/trading | Free (except network gas) | $50-150 upfront |
+| **Withdrawal Time** | Hours-days (requires KYC) | Seconds to minutes | Seconds to minutes |
+| **Censorship Risk** | High (authority can freeze) | None (you control keys) | None (you control keys) |
+| **Best For** | Day traders, beginners, fiat on/off | Active DeFi users, long-term holders | High-value holdings, maximum security |
+
+### Hardware vs Software Seed Storage
+
+| Storage Method | Security | Recovery | Convenience | Cost |
+|----------------|----------|----------|-------------|------|
+| **Hardware wallet + paper seed** | ★★★★★ (keys offline) | ✓ (seed as backup) | ★ (device required) | $50-150 |
+| **Software wallet (browser)** | ★★★ (keys on internet device) | ✓ (seed phrase backup) | ★★★★ (always available) | Free |
+| **Software wallet (mobile)** | ★★★★ (phone isolation) | ✓ (seed phrase backup) | ★★★★★ (most convenient) | Free |
+| **Paper wallet** | ★★★★★ (fully offline) | ✗ (fragile) | ★ (must type manually) | Free |
+| **Centralized exchange** | ★★ (counterparty risk) | N/A (you don't own keys) | ★★★★★ (easiest) | Free (but fees) |
 
 ---
 
@@ -241,6 +392,24 @@ Transaction Contents:
 - More blocks built on top
 - After enough confirmations, considered final
 - Cannot be reversed
+
+### Commitment Levels (Solana)
+
+Solana does NOT use "confirmations" like Bitcoin. Instead uses **commitment levels** indicating transaction state with increasing confidence:
+
+**1. Processed** (~400ms)
+- Transaction included in current block but not yet voted on
+- Risk: ~5% chance transaction drops if cluster forks
+
+**2. Confirmed** (~1-2 seconds)
+- Block has been voted on by supermajority of stake-weighted validators (≥66%)
+- Near-zero fork risk; no confirmed block has ever reverted in Solana's history
+
+**3. Finalized** (~10-20 seconds)
+- Block has 32-slot lock-out (31+ additional confirmed blocks built on top)
+- Absolute economic finality; reversal would require >33% of network stake colluding (economically irrational)
+
+**Why the distinction matters**: Bitcoin's "6 confirmations" means sequential computational work. Solana's "finalized commitment level" means validator consensus + time lock. Different security models, not directly comparable. Always specify "commitment level" for Solana, not "confirmations."
 
 ### Transaction Speed by Network
 
@@ -370,7 +539,7 @@ The small fee is worth the peace of mind.
 **Goal:** Start using crypto safely
 
 **Recommendation:**
-- Browser wallet (Phantom) for Solana
+- Browser wallet (Phantom or Solflare) for Solana
 - Keep small amounts only (<$500)
 - Learn by doing with small transactions
 
@@ -393,6 +562,13 @@ The small fee is worth the peace of mind.
 - Geographic distribution of seed backups
 - Different wallets for different purposes
 - Regular security audits
+
+### When to Recommend What
+
+- **Beginner, wants simplicity**: Phantom or Solflare (browser wallet)
+- **High security, rarely trades**: Hardware wallet (Ledger) + software wallet for active trading
+- **Active trading, lots of transactions**: Software wallet (lower friction)
+- **Long-term hold, paranoid**: Hardware wallet with paper seed backup
 
 ---
 
@@ -437,10 +613,12 @@ Over time, you'll have approved many apps. Periodically:
 | **Wallets** | Store keys, not crypto |
 | **Private keys** | Prove ownership; never share |
 | **Seed phrase** | Master backup; write on paper |
+| **HD Wallets** | One seed phrase generates unlimited addresses |
 | **Custodial** | Easy but you don't truly own |
 | **Non-custodial** | True ownership, full responsibility |
 | **Hardware wallet** | Best security for significant amounts |
 | **Transactions** | Irreversible once confirmed |
+| **Commitment levels** | Solana's version of confirmations (processed → confirmed → finalized) |
 | **Addresses** | Network-specific; verify before sending |
 
 ---

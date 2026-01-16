@@ -7,6 +7,46 @@
 
 ---
 
+## Table of Contents
+
+1. [What You'll Learn](#what-youll-learn)
+2. [Quick Acronym Reference](#quick-acronym-reference)
+3. [Part 1: What Are NFTs?](#part-1-what-are-nfts)
+   - [The Simple Explanation](#the-simple-explanation)
+   - [Fungible vs Non-Fungible](#fungible-vs-non-fungible)
+4. [Part 2: How NFT Ownership Works](#part-2-how-nft-ownership-works)
+   - [The Ownership Model](#the-ownership-model)
+   - [What You Actually Own](#what-you-actually-own)
+5. [Part 3: Creator Royalties](#part-3-creator-royalties)
+   - [How Royalties Work](#how-royalties-work)
+   - [Royalty Enforcement](#royalty-enforcement)
+6. [Part 4: Technical Standards (Solana)](#part-4-technical-standards-solana)
+   - [Types of Solana NFTs](#types-of-solana-nfts)
+   - [On-Chain vs Off-Chain Data](#on-chain-vs-off-chain-data)
+7. [Part 5: NFT Metadata](#part-5-nft-metadata)
+   - [Attributes and Rarity](#attributes-and-rarity)
+8. [Part 6: NFT Use Cases](#part-6-nft-use-cases)
+   - [Digital Art & Collectibles](#digital-art--collectibles)
+   - [Gaming Assets](#gaming-assets)
+   - [Membership & Access](#membership--access)
+   - [Real-World Assets (RWA)](#real-world-assets-rwa)
+9. [Part 7: Evaluating NFTs](#part-7-evaluating-nfts)
+   - [What to Check Before Buying](#what-to-check-before-buying)
+   - [Red Flags](#red-flags)
+10. [Part 8: NFT Marketplaces](#part-8-nft-marketplaces)
+    - [Major Solana Marketplaces](#major-solana-marketplaces)
+11. [Part 9: NFT Security](#part-9-nft-security)
+    - [Common Scams](#common-scams)
+    - [Security Best Practices](#security-best-practices)
+12. [Part 10: NFT Trading Strategy](#part-10-nft-trading-strategy)
+    - [Floor Price](#floor-price)
+    - [Liquidity Considerations](#liquidity-considerations)
+13. [Part 11: NFTs in Wallets](#part-11-nfts-in-wallets)
+14. [Part 12: Future of NFTs](#part-12-future-of-nfts)
+15. [Summary](#summary)
+
+---
+
 ## What You'll Learn
 
 This document covers everything about NFTs:

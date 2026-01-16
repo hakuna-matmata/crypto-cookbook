@@ -7,6 +7,43 @@
 
 ---
 
+## Table of Contents
+
+1. [What You'll Learn](#what-youll-learn)
+2. [Part 1: Why Crypto Feels Hard](#part-1-why-crypto-feels-hard)
+   - [The Real Problem](#the-real-problem)
+   - [The Learning Curve](#the-learning-curve)
+3. [Part 2: Transaction Failures](#part-2-transaction-failures)
+   - [Why Transactions Fail](#why-transactions-fail)
+   - [How to Handle Failures](#how-to-handle-failures)
+4. [Part 3: Confusing Concepts](#part-3-confusing-concepts)
+   - [Why Do I Need SOL for Everything?](#why-do-i-need-sol-for-everything)
+   - [Slippage: What It Actually Means](#slippage-what-it-actually-means)
+   - [What "Pending" Actually Means](#what-pending-actually-means)
+   - [Epochs and Staking Delays](#epochs-and-staking-delays)
+5. [Part 4: Connection Issues](#part-4-connection-issues)
+   - [Wallet Not Detected](#wallet-not-detected)
+   - [Session Drops](#session-drops)
+   - [Multiple Wallets Confusion](#multiple-wallets-confusion)
+6. [Part 5: Security Anxiety](#part-5-security-anxiety)
+   - [What Did I Just Sign?](#what-did-i-just-sign)
+   - [Approvals and Revocations](#approvals-and-revocations)
+   - [Scam Patterns to Recognize](#scam-patterns-to-recognize)
+7. [Part 6: What Beginners Struggle With Most](#part-6-what-beginners-struggle-with-most)
+   - [The Onboarding Friction](#the-onboarding-friction)
+   - [The Mental Model Gap](#the-mental-model-gap)
+   - [Building Confidence](#building-confidence)
+8. [Part 7: Hardware Wallet Friction](#part-7-hardware-wallet-friction)
+   - [Common Hardware Wallet Issues](#common-hardware-wallet-issues)
+9. [Part 8: Improving Your Experience](#part-8-improving-your-experience)
+   - [Before You Start](#before-you-start)
+   - [When Things Go Wrong](#when-things-go-wrong)
+   - [Building Good Habits](#building-good-habits)
+10. [Summary: The Three Core Problems](#summary-the-three-core-problems)
+11. [Quick Reference: Common Issues](#quick-reference-common-issues)
+
+---
+
 ## What You'll Learn
 
 This document covers what makes crypto difficult to use:
