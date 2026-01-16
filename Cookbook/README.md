@@ -1,4 +1,4 @@
-# Crypto Cookbook - HEAVY WORK IN PROGRESS
+# Crypto Cookbook - HEAVY WORK IN PROGRESS!
 
 A comprehensive guide for learning cryptocurrency, blockchain, DeFi, NFTs, and trading from scratch.
 
